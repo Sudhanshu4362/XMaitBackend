@@ -33,7 +33,9 @@ app.use(express.json());
 // app.use("/api-docs",swaggerUi.serve,swaggerUi.setup(swaggerspec));
 
 const jobRouter =  require('./Router/jobRouter');
+const userRouter = require('./Router/userRouter');
 app.use("/job", jobRouter);
+app.use("/user",userRouter);
 
 app.listen(5000,() => {
     console.log("server listining on port 5000")

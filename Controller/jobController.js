@@ -97,3 +97,6 @@ module.exports.deleteJob = async(req,res) => {
     })
     }
 }
+
+
+//1.31,1.45-1.46,1.48,1.54
